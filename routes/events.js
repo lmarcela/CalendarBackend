@@ -22,4 +22,3 @@ router.put("/:id", actualizarEvento);
 router.delete("/:id", eliminarEvento);
 
 module.exports = router;
-//VIDEO 339 MINUTO 4:38
