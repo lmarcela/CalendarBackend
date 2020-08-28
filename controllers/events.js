@@ -70,7 +70,7 @@ const actualizarEvento = async (req, res = response) => {
     });
   }
 };
-const eliminarEvento = async (req, res = response) => {  
+const eliminarEvento = async (req, res = response) => {
   const eventoId = req.params.id;
   const uid = req.uid;
   if (eventoId.match(/^[0-9a-fA-F]{24}$/)) {
@@ -91,7 +91,7 @@ const eliminarEvento = async (req, res = response) => {
       await Evento.findByIdAndDelete(eventoId);
 
       res.json({
-        ok: true
+        ok: true,
       });
     } catch (error) {
       console.log(error);
